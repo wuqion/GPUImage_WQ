@@ -1,14 +1,14 @@
 //
-//  RecordingViewController.m
+//  DissolveBlendVC.m
 //  gpuImage
 //
-//  Created by 联创—王增辉 on 2019/4/25.
+//  Created by 联创—王增辉 on 2019/4/26.
 //  Copyright © 2019年 lcWorld. All rights reserved.
 //
 
-#import "RecordingViewController.h"
+#import "DissolveBlendVC.h"
 #import <GPUImage.h>
-@interface RecordingViewController ()<GPUImageMovieWriterDelegate>
+@interface DissolveBlendVC ()<GPUImageMovieWriterDelegate>
 
 @property (strong, nonatomic) NSURL                 * navitionUrl;
 @property (strong, nonatomic) GPUImageMovieWriter   * movieWriter;
@@ -19,12 +19,14 @@
 @property (strong, nonatomic) AVPlayerLayer * playerLayer;
 
 
+
 @end
 
-@implementation RecordingViewController
+@implementation DissolveBlendVC
 {
     bool isRecoding;
     GPUImageView * imageV;
+    GPUImageDissolveBlendFilter * _filter;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,19 +39,32 @@
     //设置显示方向
     _videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     [_videoCamera addAudioInputsAndOutputs];
-    [_videoCamera addTarget:imageV];
+    
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"ceshi" ofType:@"mp4"];
+    NSURL * _sampleUrl = [NSURL fileURLWithPath:filePath];
+    
+    //加入滤镜
+    _filter = [[GPUImageDissolveBlendFilter alloc]init];
+    
+    _movie = [[GPUImageMovie alloc]initWithURL:_sampleUrl];
+    _movie.shouldRepeat = YES;
+    _movie.runBenchmark = YES;
+    _movie.playAtActualSpeed = YES;
+    [_movie addTarget:_filter];
+    
+    [_videoCamera addTarget:_filter];
+    
+    [_filter addTarget:imageV];
+//    [_videoCamera addTarget:imageV];
     [_videoCamera startCameraCapture];
+    [_movie startProcessing];
     
-
-    
-
     //初始化一个视频播放器
     _player = [[AVPlayer alloc]init];
     _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
     _playerLayer.frame = CGRectMake(100, 100, 100, 100);
     _playerLayer.backgroundColor = [UIColor redColor].CGColor;
     [imageV.layer addSublayer:_playerLayer];
-
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
@@ -57,10 +72,10 @@
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
         //这三句不能换位置.不然第二次录制就崩溃
-        [_videoCamera removeTarget:_movieWriter];
+        [_filter removeTarget:_movieWriter];
         _videoCamera.audioEncodingTarget = nil;
         [_movieWriter finishRecording];
-
+        
     }else{
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         //设置录制视频的存储位置
@@ -76,7 +91,7 @@
         _movieWriter.encodingLiveVideo = YES;
         //将声音录制到视频文件里面
         _movieWriter.shouldPassthroughAudio = YES;
-        [_videoCamera addTarget:_movieWriter];
+        [_filter addTarget:_movieWriter];
         _videoCamera.audioEncodingTarget = _movieWriter;
         [_movieWriter startRecording];
     }
@@ -97,4 +112,5 @@
 {
     NSLog(@"播放错了");
 }
+
 @end

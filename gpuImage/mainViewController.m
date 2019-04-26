@@ -18,6 +18,8 @@
 #import "MovieWriterVC.h"//视频转码
 #import "FilterGroupVC.h"//组合滤镜
 #import "RecordingViewController.h"//录制视频
+#import "DissolveBlendVC.h"//录制视频(加水印)
+#import "DissolveBlenderWenzi_tupian.h"//加文字.图片水印
 
 
 @interface mainViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -79,7 +81,12 @@
         case 5:
             [self.navigationController pushViewController:[RecordingViewController new] animated:YES];
             break;
-            
+        case 6:
+            [self.navigationController pushViewController:[DissolveBlendVC new] animated:YES];
+            break;
+        case 7:
+            [self.navigationController pushViewController:[DissolveBlenderWenzi_tupian new] animated:YES];
+            break;
         default:
             
             break;
@@ -109,7 +116,9 @@
         [_soures addObject:@"视频加滤镜"];
         [_soures addObject:@"组合滤镜"];
         [_soures addObject:@"录制视频"];
-        
+        [_soures addObject:@"录制视频(加视频水印)"];
+        [_soures addObject:@"录制视频(加文字`图片水印)"];
+
     }
     return _soures;
 }

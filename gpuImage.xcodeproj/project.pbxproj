@@ -13,6 +13,8 @@
 		21A37CC122718E4C007977BB /* FilterGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC022718E4C007977BB /* FilterGroupVC.m */; };
 		21A37CC52271A24E007977BB /* TiltShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC42271A24E007977BB /* TiltShiftFilter.m */; };
 		21A37CC82271AAD0007977BB /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC72271AAD0007977BB /* RecordingViewController.m */; };
+		21A4E8DA2272DB880060E9D2 /* DissolveBlendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4E8D92272DB880060E9D2 /* DissolveBlendVC.m */; };
+		21A4E8DD2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4E8DC2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m */; };
 		21E229782255AD6600581245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E229772255AD6600581245 /* AppDelegate.m */; };
 		21E2297B2255AD6600581245 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E2297A2255AD6600581245 /* mainViewController.m */; };
 		21E2297E2255AD6600581245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E2297C2255AD6600581245 /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 		21A37CC42271A24E007977BB /* TiltShiftFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiltShiftFilter.m; sourceTree = "<group>"; };
 		21A37CC62271AAD0007977BB /* RecordingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordingViewController.h; sourceTree = "<group>"; };
 		21A37CC72271AAD0007977BB /* RecordingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordingViewController.m; sourceTree = "<group>"; };
+		21A4E8D82272DB880060E9D2 /* DissolveBlendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DissolveBlendVC.h; sourceTree = "<group>"; };
+		21A4E8D92272DB880060E9D2 /* DissolveBlendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DissolveBlendVC.m; sourceTree = "<group>"; };
+		21A4E8DB2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DissolveBlenderWenzi_tupian.h; sourceTree = "<group>"; };
+		21A4E8DC2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DissolveBlenderWenzi_tupian.m; sourceTree = "<group>"; };
 		21E229732255AD6600581245 /* gpuImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpuImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E229762255AD6600581245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21E229772255AD6600581245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -164,6 +170,10 @@
 				21A37CC022718E4C007977BB /* FilterGroupVC.m */,
 				21A37CC62271AAD0007977BB /* RecordingViewController.h */,
 				21A37CC72271AAD0007977BB /* RecordingViewController.m */,
+				21A4E8D82272DB880060E9D2 /* DissolveBlendVC.h */,
+				21A4E8D92272DB880060E9D2 /* DissolveBlendVC.m */,
+				21A4E8DB2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.h */,
+				21A4E8DC2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m */,
 				21E229A2225600C800581245 /* ColorAdjustments */,
 				21A37CC22271A1EE007977BB /* ImageProcessing */,
 				21E2298E2255E64D00581245 /* contentList.plist */,
@@ -375,9 +385,11 @@
 				21E2299F2255F88200581245 /* SaturationFilter.m in Sources */,
 				21E229B82256010800581245 /* HueFilter.m in Sources */,
 				21E229952255F4DD00581245 /* BaseButtoMView.m in Sources */,
+				21A4E8DA2272DB880060E9D2 /* DissolveBlendVC.m in Sources */,
 				21E229B32256010800581245 /* HighlightShadowFilter.m in Sources */,
 				21E229B52256010800581245 /* SepiaFilter.m in Sources */,
 				21E229B72256010800581245 /* OpacityFilter.m in Sources */,
+				21A4E8DD2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m in Sources */,
 				21E229B92256010800581245 /* HazeFilter.m in Sources */,
 				21E229B62256010800581245 /* WhiteBalanceFilter.m in Sources */,
 				21EEFCC822699A2F0087534E /* tupianViewController.m in Sources */,
