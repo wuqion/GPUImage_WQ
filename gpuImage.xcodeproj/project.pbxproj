@@ -40,6 +40,7 @@
 		21EEFCC822699A2F0087534E /* tupianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EEFCC722699A2F0087534E /* tupianViewController.m */; };
 		21EEFCCB22699B0B0087534E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EEFCCA22699B0B0087534E /* BaseViewController.m */; };
 		21EEFCD12269B00D0087534E /* sheixiangtouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EEFCD02269B00D0087534E /* sheixiangtouViewController.m */; };
+		21FECDB5227ED8550098D8BD /* RawDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FECDB4227ED8540098D8BD /* RawDataVC.m */; };
 		E0836D2C7709EE0D97D4E313 /* libPods-gpuImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26939194F68CF59C6628A961 /* libPods-gpuImage.a */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,8 @@
 		21EEFCCA22699B0B0087534E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		21EEFCCF2269B00D0087534E /* sheixiangtouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sheixiangtouViewController.h; sourceTree = "<group>"; };
 		21EEFCD02269B00D0087534E /* sheixiangtouViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sheixiangtouViewController.m; sourceTree = "<group>"; };
+		21FECDB3227ED8540098D8BD /* RawDataVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawDataVC.h; sourceTree = "<group>"; };
+		21FECDB4227ED8540098D8BD /* RawDataVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RawDataVC.m; sourceTree = "<group>"; };
 		26939194F68CF59C6628A961 /* libPods-gpuImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gpuImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67678A554A04800F7DC3457 /* Pods-gpuImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpuImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gpuImage/Pods-gpuImage.debug.xcconfig"; sourceTree = "<group>"; };
 		FCDC7DB49F31FDA4E4B9B502 /* Pods-gpuImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpuImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-gpuImage/Pods-gpuImage.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				21A4E8D92272DB880060E9D2 /* DissolveBlendVC.m */,
 				21A4E8DB2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.h */,
 				21A4E8DC2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m */,
+				21FECDB3227ED8540098D8BD /* RawDataVC.h */,
+				21FECDB4227ED8540098D8BD /* RawDataVC.m */,
 				21E229A2225600C800581245 /* ColorAdjustments */,
 				21A37CC22271A1EE007977BB /* ImageProcessing */,
 				21E2298E2255E64D00581245 /* contentList.plist */,
@@ -389,6 +394,7 @@
 				21E229B32256010800581245 /* HighlightShadowFilter.m in Sources */,
 				21E229B52256010800581245 /* SepiaFilter.m in Sources */,
 				21E229B72256010800581245 /* OpacityFilter.m in Sources */,
+				21FECDB5227ED8550098D8BD /* RawDataVC.m in Sources */,
 				21A4E8DD2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m in Sources */,
 				21E229B92256010800581245 /* HazeFilter.m in Sources */,
 				21E229B62256010800581245 /* WhiteBalanceFilter.m in Sources */,

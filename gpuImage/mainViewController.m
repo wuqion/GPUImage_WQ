@@ -20,6 +20,7 @@
 #import "RecordingViewController.h"//录制视频
 #import "DissolveBlendVC.h"//录制视频(加水印)
 #import "DissolveBlenderWenzi_tupian.h"//加文字.图片水印
+#import "RawDataVC.h"//元数据的处理
 
 
 @interface mainViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -87,6 +88,9 @@
         case 7:
             [self.navigationController pushViewController:[DissolveBlenderWenzi_tupian new] animated:YES];
             break;
+        case 8:
+            [self.navigationController pushViewController:[RawDataVC new] animated:YES];
+            break;
         default:
             
             break;
@@ -118,6 +122,7 @@
         [_soures addObject:@"录制视频"];
         [_soures addObject:@"录制视频(加视频水印)"];
         [_soures addObject:@"录制视频(加文字`图片水印)"];
+        [_soures addObject:@"RawData(元数据的处理)"];
 
     }
     return _soures;
