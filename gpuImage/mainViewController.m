@@ -21,6 +21,8 @@
 #import "DissolveBlendVC.h"//录制视频(加水印)
 #import "DissolveBlenderWenzi_tupian.h"//加文字.图片水印
 #import "RawDataVC.h"//元数据的处理
+#import "identifyFaceVC.h"//人脸识别(coreImage)
+#import "faceVC.h"//美颜加水印
 
 
 @interface mainViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -37,7 +39,7 @@
     [super viewDidLoad];
     [self addUI];
     [self setViewFrame];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor whiteColor];    
 }
 
 - (void)addUI{
@@ -91,6 +93,11 @@
         case 8:
             [self.navigationController pushViewController:[RawDataVC new] animated:YES];
             break;
+        case 9:
+            [self.navigationController pushViewController:[identifyFaceVC new] animated:YES];
+            break;
+        case 10:
+            [self.navigationController pushViewController:[faceVC new] animated:YES];
         default:
             
             break;
@@ -123,6 +130,8 @@
         [_soures addObject:@"录制视频(加视频水印)"];
         [_soures addObject:@"录制视频(加文字`图片水印)"];
         [_soures addObject:@"RawData(元数据的处理)"];
+        [_soures addObject:@"人脸识别(coreImage)"];
+        [_soures addObject:@"美颜加水印"];
 
     }
     return _soures;

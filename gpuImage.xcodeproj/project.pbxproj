@@ -10,6 +10,10 @@
 		212995712270624D00E91E31 /* StillCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 212995702270624D00E91E31 /* StillCameraVC.m */; };
 		21299574227069D900E91E31 /* MovieWriterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21299573227069D900E91E31 /* MovieWriterVC.m */; };
 		2129957622706CFE00E91E31 /* ceshi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2129957522706CFE00E91E31 /* ceshi.mp4 */; };
+		21385BFA22801E5D00EBD77D /* faceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21385BF922801E5D00EBD77D /* faceVC.m */; };
+		21385C02228033C400EBD77D /* identifyFaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21385C01228033C400EBD77D /* identifyFaceVC.m */; };
+		21385C042280351400EBD77D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21385C032280351300EBD77D /* CoreImage.framework */; };
+		215CBB922283CA4E003183E3 /* 98.png in Resources */ = {isa = PBXBuildFile; fileRef = 215CBB912283CA4E003183E3 /* 98.png */; };
 		21A37CC122718E4C007977BB /* FilterGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC022718E4C007977BB /* FilterGroupVC.m */; };
 		21A37CC52271A24E007977BB /* TiltShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC42271A24E007977BB /* TiltShiftFilter.m */; };
 		21A37CC82271AAD0007977BB /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC72271AAD0007977BB /* RecordingViewController.m */; };
@@ -50,6 +54,12 @@
 		21299572227069D900E91E31 /* MovieWriterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieWriterVC.h; sourceTree = "<group>"; };
 		21299573227069D900E91E31 /* MovieWriterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieWriterVC.m; sourceTree = "<group>"; };
 		2129957522706CFE00E91E31 /* ceshi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceshi.mp4; sourceTree = "<group>"; };
+		21385BF822801E5D00EBD77D /* faceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = faceVC.h; sourceTree = "<group>"; };
+		21385BF922801E5D00EBD77D /* faceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faceVC.m; sourceTree = "<group>"; };
+		21385C00228033C400EBD77D /* identifyFaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = identifyFaceVC.h; sourceTree = "<group>"; };
+		21385C01228033C400EBD77D /* identifyFaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = identifyFaceVC.m; sourceTree = "<group>"; };
+		21385C032280351300EBD77D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		215CBB912283CA4E003183E3 /* 98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 98.png; sourceTree = "<group>"; };
 		21A37CBF22718E4C007977BB /* FilterGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterGroupVC.h; sourceTree = "<group>"; };
 		21A37CC022718E4C007977BB /* FilterGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterGroupVC.m; sourceTree = "<group>"; };
 		21A37CC32271A24E007977BB /* TiltShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiltShiftFilter.h; sourceTree = "<group>"; };
@@ -118,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21385C042280351400EBD77D /* CoreImage.framework in Frameworks */,
 				E0836D2C7709EE0D97D4E313 /* libPods-gpuImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +166,7 @@
 		21E229752255AD6600581245 /* gpuImage */ = {
 			isa = PBXGroup;
 			children = (
+				215CBB912283CA4E003183E3 /* 98.png */,
 				21E229762255AD6600581245 /* AppDelegate.h */,
 				21E229772255AD6600581245 /* AppDelegate.m */,
 				21EEFCC922699B0B0087534E /* BaseViewController.h */,
@@ -179,6 +191,10 @@
 				21A4E8DC2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m */,
 				21FECDB3227ED8540098D8BD /* RawDataVC.h */,
 				21FECDB4227ED8540098D8BD /* RawDataVC.m */,
+				21385BF822801E5D00EBD77D /* faceVC.h */,
+				21385BF922801E5D00EBD77D /* faceVC.m */,
+				21385C00228033C400EBD77D /* identifyFaceVC.h */,
+				21385C01228033C400EBD77D /* identifyFaceVC.m */,
 				21E229A2225600C800581245 /* ColorAdjustments */,
 				21A37CC22271A1EE007977BB /* ImageProcessing */,
 				21E2298E2255E64D00581245 /* contentList.plist */,
@@ -231,6 +247,7 @@
 		6D173C3B6CBC8BFDD44A115B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21385C032280351300EBD77D /* CoreImage.framework */,
 				26939194F68CF59C6628A961 /* libPods-gpuImage.a */,
 			);
 			name = Frameworks;
@@ -305,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2129957622706CFE00E91E31 /* ceshi.mp4 in Resources */,
+				215CBB922283CA4E003183E3 /* 98.png in Resources */,
 				21E229832255AD6E00581245 /* LaunchScreen.storyboard in Resources */,
 				21E2298F2255E64D00581245 /* contentList.plist in Resources */,
 				21E229802255AD6E00581245 /* Assets.xcassets in Resources */,
@@ -384,6 +402,7 @@
 				21E2299E2255F88200581245 /* ExposureFilter.m in Sources */,
 				21E229922255EE2600581245 /* BrightnessFilter.m in Sources */,
 				21E2297B2255AD6600581245 /* mainViewController.m in Sources */,
+				21385C02228033C400EBD77D /* identifyFaceVC.m in Sources */,
 				21E229A12255F88200581245 /* ContrastFilter.m in Sources */,
 				21E229BA2256010800581245 /* RGBFilter.m in Sources */,
 				21A37CC82271AAD0007977BB /* RecordingViewController.m in Sources */,
@@ -394,6 +413,7 @@
 				21E229B32256010800581245 /* HighlightShadowFilter.m in Sources */,
 				21E229B52256010800581245 /* SepiaFilter.m in Sources */,
 				21E229B72256010800581245 /* OpacityFilter.m in Sources */,
+				21385BFA22801E5D00EBD77D /* faceVC.m in Sources */,
 				21FECDB5227ED8550098D8BD /* RawDataVC.m in Sources */,
 				21A4E8DD2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m in Sources */,
 				21E229B92256010800581245 /* HazeFilter.m in Sources */,

@@ -186,7 +186,7 @@
                   moduleName = "gpuImage"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lianchuang-wangzenghui/Desktop/gpuImage/gpuImage/RecordingViewController.m"
-                  timestampString = "577962737.887765"
+                  timestampString = "579089891.7118"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "89"
@@ -201,7 +201,7 @@
                   moduleName = "gpuImage"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lianchuang-wangzenghui/Desktop/gpuImage/gpuImage/RecordingViewController.m"
-                  timestampString = "577962737.8902791"
+                  timestampString = "579089891.713402"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
@@ -216,7 +216,7 @@
                   moduleName = "gpuImage"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lianchuang-wangzenghui/Desktop/gpuImage/gpuImage/RecordingViewController.m"
-                  timestampString = "577962737.8927931"
+                  timestampString = "579089891.715026"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "89"
@@ -224,6 +224,38 @@
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gpuImage/identifyFaceVC.m"
+            timestampString = "579089891.495252"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gpuImage/identifyFaceVC.m"
+            timestampString = "579089891.495522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "-noseCrest"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
