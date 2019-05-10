@@ -14,6 +14,7 @@
 		21385C02228033C400EBD77D /* identifyFaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21385C01228033C400EBD77D /* identifyFaceVC.m */; };
 		21385C042280351400EBD77D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21385C032280351300EBD77D /* CoreImage.framework */; };
 		215CBB922283CA4E003183E3 /* 98.png in Resources */ = {isa = PBXBuildFile; fileRef = 215CBB912283CA4E003183E3 /* 98.png */; };
+		217508AE22856111003BABBA /* SobelEdgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 217508AD22856111003BABBA /* SobelEdgeVC.m */; };
 		21A37CC122718E4C007977BB /* FilterGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC022718E4C007977BB /* FilterGroupVC.m */; };
 		21A37CC52271A24E007977BB /* TiltShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC42271A24E007977BB /* TiltShiftFilter.m */; };
 		21A37CC82271AAD0007977BB /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A37CC72271AAD0007977BB /* RecordingViewController.m */; };
@@ -60,6 +61,8 @@
 		21385C01228033C400EBD77D /* identifyFaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = identifyFaceVC.m; sourceTree = "<group>"; };
 		21385C032280351300EBD77D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		215CBB912283CA4E003183E3 /* 98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 98.png; sourceTree = "<group>"; };
+		217508AC22856111003BABBA /* SobelEdgeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SobelEdgeVC.h; sourceTree = "<group>"; };
+		217508AD22856111003BABBA /* SobelEdgeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SobelEdgeVC.m; sourceTree = "<group>"; };
 		21A37CBF22718E4C007977BB /* FilterGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterGroupVC.h; sourceTree = "<group>"; };
 		21A37CC022718E4C007977BB /* FilterGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterGroupVC.m; sourceTree = "<group>"; };
 		21A37CC32271A24E007977BB /* TiltShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiltShiftFilter.h; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				21385BF922801E5D00EBD77D /* faceVC.m */,
 				21385C00228033C400EBD77D /* identifyFaceVC.h */,
 				21385C01228033C400EBD77D /* identifyFaceVC.m */,
+				217508AC22856111003BABBA /* SobelEdgeVC.h */,
+				217508AD22856111003BABBA /* SobelEdgeVC.m */,
 				21E229A2225600C800581245 /* ColorAdjustments */,
 				21A37CC22271A1EE007977BB /* ImageProcessing */,
 				21E2298E2255E64D00581245 /* contentList.plist */,
@@ -418,6 +423,7 @@
 				21A4E8DD2272FACD0060E9D2 /* DissolveBlenderWenzi_tupian.m in Sources */,
 				21E229B92256010800581245 /* HazeFilter.m in Sources */,
 				21E229B62256010800581245 /* WhiteBalanceFilter.m in Sources */,
+				217508AE22856111003BABBA /* SobelEdgeVC.m in Sources */,
 				21EEFCC822699A2F0087534E /* tupianViewController.m in Sources */,
 				212995712270624D00E91E31 /* StillCameraVC.m in Sources */,
 				21E229862255AD6E00581245 /* main.m in Sources */,

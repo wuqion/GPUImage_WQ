@@ -23,12 +23,16 @@
 #import "RawDataVC.h"//元数据的处理
 #import "identifyFaceVC.h"//人脸识别(coreImage)
 #import "faceVC.h"//美颜加水印
+#import "SobelEdgeVC.h"//边检
 
+#define Mask8(x) ( (x) & 0xFF )
+#define ARGBMake(a, r,g, b) ( Mask8(a) | Mask8(r) << 8 | Mask8(g) << 16 | Mask8(b) << 24 )
 
 @interface mainViewController ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UITableView    *tableView;
 @property (strong, nonatomic) NSMutableArray *soures;
+@property (strong, nonatomic) UIImageView    *imageV;
 
 
 @end
@@ -39,8 +43,11 @@
     [super viewDidLoad];
     [self addUI];
     [self setViewFrame];
-    self.view.backgroundColor = [UIColor whiteColor];    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
 }
+
 
 - (void)addUI{
     [self.view addSubview:self.tableView];
@@ -98,6 +105,10 @@
             break;
         case 10:
             [self.navigationController pushViewController:[faceVC new] animated:YES];
+            break;
+        case 11:
+            [self.navigationController pushViewController:[SobelEdgeVC new] animated:YES];
+            break;
         default:
             
             break;
@@ -132,6 +143,7 @@
         [_soures addObject:@"RawData(元数据的处理)"];
         [_soures addObject:@"人脸识别(coreImage)"];
         [_soures addObject:@"美颜加水印"];
+        [_soures addObject:@"Sobel边界检测"];
 
     }
     return _soures;
